@@ -9,4 +9,17 @@ def main(a):
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False.
     """
-    return
+    m = a % 10
+    n = (a // 10) % 10
+
+    A = m * 10 + n
+    s = 0
+    print(A)
+    print(a)
+    if a >= A:
+        s = True
+    else:
+        s = False
+
+    return s
+print(main(54))
